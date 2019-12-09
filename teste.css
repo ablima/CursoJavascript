@@ -1,0 +1,35 @@
+h1 {
+    color: red;
+    font-size: 46px;
+    background-color: gray;
+}
+
+#titulo {
+    color: purple;    
+}
+
+.texto {
+    color: green;
+}
+
+#header {
+    border-color: greenyellow;
+    border-width: 2px;
+    border-style: dashed;
+    background-color: #A0A0A0;
+}
+
+#button {
+    border-radius: 20px;
+    width: 200px;
+}
+
+#button h3 {
+    font-size: 28px;
+    color: purple;
+}
+
+#button img {
+    width: 44px;
+    height: 44px;
+}
