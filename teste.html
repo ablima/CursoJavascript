@@ -4,6 +4,10 @@
         <title>CURSO JAVASCRIPT</title>
         <link rel="stylesheet" href="teste.css" />
 
+        <script src="teste.js">
+            /* Código script aqui */
+        </script>
+
         <style>
             /* Código CSS aqui */
         </style>
@@ -13,10 +17,9 @@
             este é um comentário
             de nossa primeira aula =)
         -->
-
         <div id="header">
             <h1>Olá,</h1>
-            <h1 id="titulo">Título 1</h1>
+            <h1 id="texto1">Título 1</h1>
             <h1>Título 2</h1>
         </div>
 
@@ -76,43 +79,83 @@
             </tr>
         </table>
 
-        <form>
+        <form onsubmit="submit()" name="myForm" id="myForm" class="myForm">
 
-            <input />
+            <p>
+                <label>Nome: </label>
+                <input />
+            </p>
+            
+            <p>
+                <label>Senha: </label>
+                <input type="password" />
+            </p>
 
-            <textarea></textarea>
-    
-            <input type="checkbox" />
-    
-            <input type="password" />
-    
-            <input type="radio" />
-            <input type="radio" />
-            <input type="radio" />
-    
-            <input type="image" />
-    
-            <input type="file" />
-    
-            <input type="date" />
+            <p>
+                <p>Descrição: </p>
+                <textarea></textarea>
+            </p>
+            
+            <p>
+                <label>Enviar</label>
+                <input type="checkbox" />
+            </p>
+            
+            <p>
+                <label>Sexo: </label>
+                
+                <input id="gender1" type="radio" />
+                <label for="gender1">Masculino</label>
 
-            <input type="range" />
+                <input id="gender2" type="radio" />
+                <label for="gender2">Feminino</label>
+
+                <input id="gender3" type="radio" />
+                <label for="gender3">Outro</label>
+            </p>
+            
+            <p>
+                <label>Foto:</label>
+                <input type="image" />
+            </p>
+            
+            <p>
+                <label>Arquivo: </label>
+                <input type="file" />
+            </p>
+            
+            <p>
+                <label>Data de nascimento:</label>
+                <input type="date" />
+            </p>
+
+            <p>
+                <label>Range:</label>
+                <input type="range" />
+            </p>
+            
+            <p>
+                <label>Select:</label>
+                <select>
+                    <option>Opção 1</option>
+                    <option>Opção 2</option>
+                    <option>Opção 3</option>
+                </select>
+            </p>
     
-            <select>
-                <option>Opção 1</option>
-                <option>Opção 2</option>
-                <option>Opção 3</option>
-            </select>
+            <p>
+                <button type="submit">ENVIAR</button>
+            </p>
 
         </form>
 
-        <button id="button">
+        <button id="button" onclick="mudarTexto()">
             <h3>Clique</h3>
             <h1>AQUI</h1>
             <img src="https://imagepng.org/wp-content/uploads/2019/08/google-icon-1.png" />
         </button>
 
-        <button id="button">
+        <button id="button" onclick="alertar()">
             <h3>Clique</h3>
             <h1>AQUI</h1>
             <img src="https://imagepng.org/wp-content/uploads/2019/08/google-icon-1.png" />

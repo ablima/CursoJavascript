@@ -6,6 +6,13 @@ h1 {
 
 #titulo {
     color: purple;    
+    transition: 300ms ease-in;
+    text-align: center;
+}
+
+#titulo:hover {
+    color: yellow;
+    font-size: 52px;
 }
 
 .texto {
@@ -32,4 +39,10 @@ h1 {
 #button img {
     width: 44px;
     height: 44px;
+}
+
+.myForm {
+    border-radius: 10px;
+    padding: 30px;
+    border: 1px red solid;
 }
