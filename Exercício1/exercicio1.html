@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <script src="aluno.js"></script>
+        <script src="turma.js"></script>
         <script src="exercicio1.js"></script>
+        
         <link rel="stylesheet" href="exercicio1.css" />
     </head>
     <body>
@@ -22,7 +25,7 @@
                     <input type="date" id="nascimentoAluno" />
                 </p>
                 
-                <button id="botaoInserir">
+                <button id="botaoInserir" onclick="inserirAluno()">
                     Inserir
                 </button>
 
@@ -36,7 +39,7 @@
                     <input id="procurarAluno" />
                 </p>
 
-                <button>Procurar</button>
+                <button onclick="procurarAluno()">Procurar</button>
             </div>
         </div>
     </body>
