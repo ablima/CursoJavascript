@@ -59,3 +59,35 @@ function mudarTexto() {
 
     texto.innerHTML = "CLIQUE DO BOTÃO";
 }
+
+$("#buttonAlert")[0].on('click', alertar);
+
+/*
+function divideUntilZero(number, callback, count = 0){
+
+    if(number / 2 >= 1){
+        console.info(number / 2);
+        return setTimeout(
+            () => divideUntilZero(number/2, callback, count+1),
+            1000
+        );
+    }else{
+
+        try{
+            callback();
+        }catch(err){
+            console.info("Nenhum callback");
+        }
+        
+        return count;
+    }
+    
+}
+
+console.info("teste1");
+
+divideUntilZero(32, function(){
+    console.info("teste2");
+});
+
+*/

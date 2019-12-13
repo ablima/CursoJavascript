@@ -23,6 +23,10 @@ function inserirAluno(){
     numeroAlunos.innerHTML = turma.numeroAlunos;
 
     console.info(turma);
+
+    listaAlunos();
+
+    //$("#listaAlunos").append("<h1>" + novoAluno.nomeCompleto + "</h1>");
 }
 
 function procurarAluno(){
@@ -32,4 +36,14 @@ function procurarAluno(){
     }else{
         console.error("Nenhum aluno encontrado");
     }
+}
+
+function listaAlunos(){
+
+    $("#listaAlunos").children().remove();
+
+    turma.alunos.map(aluno => {
+        $("#listaAlunos").append("<h1>" + aluno.nomeCompleto + "</h1>");
+    });
+
 }

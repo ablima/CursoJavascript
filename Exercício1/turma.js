@@ -3,7 +3,6 @@ class Turma{
     constructor(nome){
         this.nome = nome;
         this.alunos = [];
-        this.teste = "TESTE";
     }
 
     adicionarAluno(novoAluno){
@@ -30,11 +29,11 @@ class Turma{
 
 }
 
-class TurmaEspecial{
+class TurmaFerias extends Turma {
 
-    constructor(){
-        Object.setPrototypeOf(this, Turma);
-        this.extra = "EXTRA";
+    constructor(nome){
+        super(nome); //CONSTRUTOR DA CLASSE TURMA
+        this.periodo = 15;
     }
 
 }
