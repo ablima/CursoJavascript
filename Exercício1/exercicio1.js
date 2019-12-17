@@ -1,5 +1,12 @@
 var nomeTurma = prompt("Informe o nome da turma");
 
+$.ajax({
+    url: "http://localhost:3002/turma?nome=" + nomeTurma,
+    success: function(response){
+        console.info(response);
+    }
+});
+
 var turma = new Turma(nomeTurma);
 
 var inputNome;
