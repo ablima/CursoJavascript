@@ -3,7 +3,7 @@ var turmaController = require("./../controllers/turmaController");
 module.exports = function (app){
     app.route('/')
         .get(function(request, response){
-            response.
+            response.send("GET CHAMADO");
         })
         .post(function(request, response){
             console.log(request.body);
