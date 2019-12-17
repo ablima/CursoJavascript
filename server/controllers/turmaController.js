@@ -33,7 +33,7 @@ exports.inserirTurma = function(request, response){
         if(error){
             response.send("Erro ao salvar turma");
         }
-        response.send(result._id);
+        response.json({_id: result._id});
     });
 }
 
@@ -41,7 +41,7 @@ exports.atualizarTurma = function(request, response){
     console.info("UPDATE TURMA");
     console.info(request.params.id);
     console.info(request.body);
-    
+
     Turma.findOneAndUpdate({_id: request.params.id}, request.body, function(error, result){
         if(error){
             response.send("Erro ao atualizar turma");
